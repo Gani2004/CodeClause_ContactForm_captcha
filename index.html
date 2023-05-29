@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+      <script src="script.js"></script>
+  </head>
+  <body>
+  <div class="container">
+      <div class="card">
+    <h2>Contact Us</h2>
+        <p id="key"></p>
+   <form onsubmit="return checkCaptcha()">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+       
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="abc@abc.com" required>
+       
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" placeholder="xxxx-xxxx-xx" required>
+       
+          <label for="message">Message</label>
+       <input type="text" id="message" name="message" placeholder="Write your message here." required>
+           <div id="captchaContainer">
+            <label for="captchaInput">Enter the Captcha given below</label>
+            <input type="text" id="captchaInput" placeholder="Enter the captcha" required>
+            <div id="captcha"></div>
+          </div>
+           <input type="submit" value="Submit">
+        </form>
+ 
+</body>
+</html>
